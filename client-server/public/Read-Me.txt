@@ -1,0 +1,35 @@
+Instalar o Bower
+Web sites are made of lots of things — frameworks, libraries, assets, and utilities. Bower manages all these things for you.
+npm install -g bower
+
+bower install
+
+
+Baixar as dependências desse projeto
+npm install
+
+
+Alterar a porta do servidor para 4000 e rodar no node index novamente
+
+Acessar a pasta C:\Users\felv\Documents\Curso_Completo_de_Javascript\Projeto-Node-Client-Server
+e instalar Expresse Generator
+npm install express-generator -g
+
+Para ter certeza que o express está funcionando digitar
+express -h
+
+Para gerar um novo projeto/aplicação
+express --ejs client-server
+
+   change directory:
+     > cd client-server
+
+   install dependencies:
+     > npm install
+
+   run the app:
+     > SET DEBUG=client-server:* & npm start
+
+Colocar o npm para rodar
+npm start
+
