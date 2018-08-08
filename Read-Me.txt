@@ -1,0 +1,78 @@
+Aula 76 - Criando um novo projeto com Express Genarator
+
+Criar uma pasta Projeto-Node-Client-Server
+
+Acessar o github 
+https://github.com/hcodebr
+
+Clonar o projeto curso-javascript-projeto-usuarios-localstorage dentro da pasta Projeto-Node-Client-Server
+git clone https://github.com/hcodebr/curso-javascript-projeto-usuarios-localstorage.git
+
+Instalar o Bower
+Web sites are made of lots of things — frameworks, libraries, assets, and utilities. Bower manages all these things for you.
+npm install -g bower
+
+Acesse a pasta do projeto, nesse caso:
+cd C:\Users\felv\Documents\Curso_Completo_de_Javascript\Projeto-Node-Client-Server\curso-javascript-projeto-usuarios-localstorage
+bower install (irá ler o arquivo bower.json e fazer a instalação de todas as dependências visuais do nosso projeto)
+
+Baixar as dependências visuais desse projeto
+npm install
+
+Clonar o projeto curso-javascript-projeto-usuarios-restapi dentro da pasta Projeto-Node-Client-Server
+git clone https://github.com/hcodebr/curso-javascript-projeto-usuarios-restapi.git
+
+Também não temo o node_modules e precisamos instalar, então acesse a pasta 
+cd C:\Users\felv\Documents\Curso_Completo_de_Javascript\Projeto-Node-Client-Server\curso-javascript-projeto-usuarios-restapi
+
+Baixar as dependências visuais desse projeto que estão mo package.json
+npm install
+
+Alterar a porta do servidor para 4000, no arquivo index.js, e rodar no node index novamente
+
+Acessar a pasta 
+cd C:\Users\felv\Documents\Curso_Completo_de_Javascript\Projeto-Node-Client-Server\curso-javascript-projeto-usuarios-restapi
+
+Executar o node index
+
+Para inteligar os projetos vamos instalar o Express Genarator
+Acessar a pasta C:\Users\felv\Documents\Curso_Completo_de_Javascript\Projeto-Node-Client-Server
+e instalar Expresse Generator
+npm install express-generator -g
+
+Para ter certeza que o express está funcionando digitar
+express -h
+
+Para gerar um novo projeto/aplicação
+express --ejs client-server
+
+   change directory:
+     > cd client-server
+
+   install dependencies:
+     > npm install
+
+   run the app:
+     > SET DEBUG=client-server:* & npm start
+
+Colocar o npm para rodar
+npm start
+
+Copiar todos os arquivos da pasta C:\Users\felv\Documents\Curso_Completo_de_Javascript\Projeto-Node-Client-Server\curso-javascript-projeto-usuarios-localstorage
+para a pasta C:\Users\felv\Documents\Curso_Completo_de_Javascript\Projeto-Node-Client-Server\client-server\public
+
+Recorte o arquivo index.html dessa pasta e cole-o na pasta C:\Users\felv\Documents\Curso_Completo_de_Javascript\Projeto-Node-Client-Server\client-server\views
+Exclua o arquivo index.js existente e renomei o index.html para index.js
+
+Pare o serviço do node express, o da Restful fica rodando não para!!!
+Acesse a pasta C:\Users\felv\Documents\Curso_Completo_de_Javascript\Projeto-Node-Client-Server\client-server
+Iniciar o serviço novamente
+npm start
+
+Instalar o Restify
+Primeiro vamos parar o serviço do express
+npm install restify-clients --save (--save coloca como dependência no package.json)
+
+Voltar o serviço do express
+npm start
+
